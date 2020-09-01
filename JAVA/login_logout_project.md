@@ -73,8 +73,6 @@ public class Member {
 
 
 
-
-
 ### MemberServiceEx
 
 ```java
@@ -153,7 +151,7 @@ public static void newId() //아이디 생성
         if (members[i] == null) {
             members[i] = userInformation;
             System.out.println(userInformation.getName() + "님의 아이디가 생성되셨습니다.");
-            System.out.println(i+"번째");
+            //System.out.println(i+"번째"); 몇 번째 인덱스에 저장되는지 확인
             break;
         }
     }
