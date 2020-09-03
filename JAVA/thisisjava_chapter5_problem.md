@@ -40,14 +40,20 @@ public class arraySumAvg {
             for(int j=0; j<array[i].length; j++) {
                 sum += array[i][j];
             }
+            //cnt+=array[i].length;
         }
-        avg=(double)sum/10;
+        avg=(double)sum/10; //1)
+        //avg=(double)sum/cnt;
         System.out.println("sum: "+sum);
         System.out.println("avg: "+avg);
     }
 }
 
 ```
+
+1) 10 또는 cnt를 추가해서 배열의 전체 길이를 구했다. array.length로 나누면 왜 안 될까? 
+
+arr은 arr[0], arr[1], arr[3]을 가리키기 때문에 arr.length는 3이 된다. arr[0].length는 2, arr[1].lengt는 3, arr[3].length는 5가 되는 것이다.
 
 
 
