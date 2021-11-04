@@ -83,7 +83,7 @@ public class PhoneDirectory {
 }
 ```
 
--
+---
 
 리스트를 사용하면 안 되나라는 의문이 들었다. 그래서 List를 이용해서도 작성해봤다.
 
