@@ -4,7 +4,12 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class BiggestNumber {
-	public String solution(int[] numbers) {
+	public static void main(String[] args) {
+		int[] numbers = {3, 30, 34, 5, 9};
+		System.out.println("´ä: "+solution(numbers));
+	}
+	
+	public static String solution(int[] numbers) {
         String answer = "";
         String[] arr = new String[numbers.length];
         
@@ -15,7 +20,8 @@ public class BiggestNumber {
         Arrays.sort(arr, new Comparator<String>() {
         	@Override
         	public int compare(String a, String b) {
-        		return (a+a).compareTo(b+a);
+        		System.out.println((b+a).compareTo(a+b)+" "+a+" "+b);
+        		return (b+a).compareTo(a+b);
         	}
         });
 
