@@ -22,10 +22,10 @@ public class Subsequence {
 			for(j=0+j; j<t.length(); j++) {
 				if(t.charAt(j)==s.charAt(i)) {
 					count++;
+					j++;
 					break;
 				}
 			}
-			j++;
 		}
 		
 		if(count==len) {
