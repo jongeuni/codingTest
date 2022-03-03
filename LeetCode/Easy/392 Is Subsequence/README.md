@@ -1,4 +1,4 @@
-## Is Subsequence - 392
+## [Is Subsequence - 392](https://leetcode.com/problems/is-subsequence/submissions/)
 
 Given two string s and t, return true if s is a subsequence of t, or false otherwise.
 
@@ -70,7 +70,7 @@ for(j=0+j; j<t.length(); j++) {
 "bbaaaa"
 ```
 
-을 입력했을 때 false가 나와야하는데, true가 나왔다. 사실 위에 주석으로 단 것처럼 남은 글자수가 포함해야할 글자수보다 적다면 (포함되어야 할 글자수가 더 많다면) false를 리턴해준다라는 코드가 추가되면 끝날 일이지만 그러고 싶지 않았다. 문제는 아까 붙이지 않았던 j++이었다. 다시 생각해보니 *j가 +되지 않을 상황은 break가 걸렸을 때 뿐*이었다, 그러니 **그 곳에 j++**를 붙여주면 됐다.
+을 입력했을 때 false가 나와야하는데, true가 나왔다. 사실 위에 주석으로 단 것처럼 남은 글자수가 포함해야할 글자수보다 적다면 (포함되어야 할 글자수가 더 많다면) false를 리턴해준다라는 코드가 추가되면 끝날 일이지만 그러고 싶지 않았다. 문제는 아까 붙이지 않았던 j++이었다. 다시 생각해보니 *j가 +되지 않을 상황은 break가 걸렸을 때 뿐*이었다, 그러니 **그 곳에 j++를** 붙여주면 됐다.
 
 <br>
 
@@ -127,4 +127,4 @@ public class Subsequence {
 
 ![image](https://user-images.githubusercontent.com/66874658/156343948-0ad9d087-5d59-41cc-a011-e92179ed7225.png)
 
-나는 여기... 중간 정도로 푼 것 같다. runtime 엄청 적게 걸린 사람들은 어떻게 풀었을지 궁금하다. 글자수까지 체크했나?
+나는 여기. 중간 정도로 푼 것 같다. runtime 엄청 적게 걸린 사람들은 어떻게 풀었을지 궁금하다. 글자수까지 체크했나?
